@@ -1,3 +1,9 @@
+<h1 class="text-center">Your cocktail list</h1>
+
+<div class="text-center padded">
+  <%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-primary" %>
+</div>
+
 <div class="container">
   <ul>
     <% @cocktails.each do |cocktail| %>
@@ -8,5 +14,4 @@
   </ul>
 </div>
 
-<%= link_to "Add a cocktail", new_cocktail_path(@cocktail), class: "btn btn-danger"%>
 
